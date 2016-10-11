@@ -1,0 +1,33 @@
+<nav class="navbar navbar-fixed-top header-white navbar-inverse navbar-transparent" role="navigation">
+  <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-main">
+          <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to 'Home', root_path %></li>
+              <li><%= link_to 'About', root_path %></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+<header class="blog-header header-white header-overlay align-center align-middle"  style="background-image: url(<%= asset_path 'blog_image-1.png' %>)">
+    <div class="header-inner">
+        <div class="container">
+          <a class="brand light" href=# role="banner" >
+            <img src="<%= asset_path 'gamma-1.png' %>" alt="Blog Logo" />
+          </a>
+            <h1 class="blog-title light">
+              Code |> Sudo
+            </h1>
+            <h2 class="blog-description light bordered bordered-top">
+                A blog about code.
+            </h2>
+        </div>
+    </div>
+</header>

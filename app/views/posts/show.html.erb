@@ -1,5 +1,55 @@
-<div class="col-sm-11 col-xs-12 blog-content">
-  <h2 class="text-center"><%= @post.title %></h2>
-  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
-  <div><%= raw @post.body %></div>
+<div id="main" class="content" role="main">
+  <div class="container">
+    <article class="post tag-design tag-ghost-post post">
+      <div class="row">
+        <h1 class="post-title text-center hyper lighter">
+          <%= @post.title %>
+        </h1>
+        <div class="post-info text-center bordered-top col-md-2">
+          <time datetime="<%= @post.created_at.strftime('%b %d, %Y') %>" class="post-time">
+            <%= @post.created_at.strftime('%b %d, %Y') %>
+          </time>
+          on <span class="post-tags">tags, tags, tags</span>
+        </div>
+        <div class="post-body bordered-bottom col-md-8">
+          <%= raw(@post.body) %>
+        </div>
+      </div>
+      <footer class="post-footer">
+        <div class="row">
+          <div class="post-share text-center bordered bordered-bottom col-md-8 col-md-offset-2">
+            <p class="light">Share this post</p>
+            <ul class="social-icons social-mini">
+              <li>
+                <a data-toggle="tooltip" title="Share on Twitter" href="https://twitter.com/share?text=<%= @post.title %>&amp;url=<%= request.original_url %>" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                  <i class="icon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tooltip" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= request.original_url %>" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                  <i class="icon-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tooltip" title="Share on Google plus" href="https://plus.google.com/share?url=<%= request.original_url %>" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                  <i class="icon-google-plus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-author row">
+          <!-- <div class="col-md-2 text-center"> -->
+            <!-- {{#if author.image}}
+              <img src="{{author.image}}" itemprop="image" class="post-avatar img-circle img-responsive"/>
+            {{/if}} -->
+          <!-- </div> -->
+          <div class="col-md-8">
+            <h4 class="small-screen-center">Javier Perez</h4>
+            <p class="lead">Awesome coder, awesome guy all around!</p>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </div>
 </div>
