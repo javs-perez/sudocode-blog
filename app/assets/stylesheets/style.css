@@ -486,8 +486,9 @@ html {
 }
 /* - Blog title and description - */
 .blog-title {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 10px;
+  padding-left: 10px;
   text-transform: uppercase;
 }
 .blog-title span {
@@ -2227,4 +2228,10 @@ a .icon-flip-vertical:before {
 }
 .icon-renren:before {
   content: "\f18b";
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+  padding-top: 5px
 }
