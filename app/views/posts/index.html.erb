@@ -12,7 +12,7 @@
             on <span class="post-tags">tags, tags, tags</span>
           </div>
           <div class="post-body bordered-bottom col-md-8">
-            <%= truncate(raw(post.body), length: 300, omission: '...', separator: ' ', escape: false) %>
+            <%= truncate(post.intro, length: 350, omission: '...', separator: ' ', escape: false) %>
           </div>
       </article>
     <% end %>
