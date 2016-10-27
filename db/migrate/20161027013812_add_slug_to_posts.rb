@@ -3,5 +3,4 @@ class AddSlugToPosts < ActiveRecord::Migration
     add_column :posts, :slug, :string
     add_index :posts, :slug, unique: true
   end
-
 end
