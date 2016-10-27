@@ -18,6 +18,7 @@ gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'ckeditor', '~> 4.2'
 gem 'paperclip', '~> 5.1'
 gem 'devise', '~> 4.2'
+gem 'friendly_id', '~> 5.1'
 
 group :development, :test do
   gem 'byebug'
