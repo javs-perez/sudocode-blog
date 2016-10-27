@@ -16,7 +16,7 @@
           <time datetime="<%= @post.created_at.strftime('%b %d, %Y') %>" class="post-time">
             <%= @post.created_at.strftime('%b %d, %Y') %>
           </time>
-          on <span class="post-tags">tags, tags, tags</span>
+          <!-- on <span class="post-tags">tags, tags, tags</span> -->
         </div>
         <div class="post-body bordered-bottom col-md-8">
           <%= raw(@post.body) %>
